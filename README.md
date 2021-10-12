@@ -4,12 +4,14 @@
 
 * The leaderboard website displays scores.
 
+# Screenshot
+
 ## Setup
 
 ### Clone this repository
 
 ```bash
-$ git clone https://github.com/BenMukebo/Leaderboard.git
+$ git clone https://github.com/Ugboaja-Uchechi/leaderboard.git
 $ cd Leaderboard
 ```
 
