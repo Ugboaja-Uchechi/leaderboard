@@ -18,16 +18,6 @@ $ git clone https://github.com/Ugboaja-Uchechi/leaderboard.git
 $ cd Leaderboard
 ```
 
-### set up webpack
-
-```bash
-
-$ npm install --save-dev html-webpack-plugin  
-$ npm install --save-dev webpack-dev-server
-$ npm npm install --save-dev style-loader css-loader # To able to use npm run start for live reloading.
-```
-
-
 ### Run project
 
 ```bash
