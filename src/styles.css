@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 body {
   font-family: 'Balsamiq Sans', sans-serif;
@@ -102,4 +102,4 @@ span {
 
 .scores:nth-child(even) {
   background-color: #f0f0f0;
-} */
+}
