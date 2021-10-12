@@ -1,3 +1,105 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 body {
-  color: red;
+  font-family: 'Balsamiq Sans', sans-serif;
 }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  border: 2px solid #000000;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-left: 2rem;
+}
+
+div > h3 button, .btn {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 3px 2px;
+  line-height: 1.5rem;
+}
+
+.text {
+  margin-left: 4.7rem;
+}
+
+.text h3 {
+  position: relative;
+  top: 1rem;
+  font-size: 1.4rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score-list {
+  position: relative;
+  bottom: 1.5rem;
+  border: 2px solid black;
+  list-style-type: none;
+  width: 200%;
+  padding-left: 0;
+  border-radius: 3px;
+}
+
+.add-score {
+  position: relative;
+  bottom: 4.5rem;
+  font-size: 1.4rem;
+}
+
+.add-score h3 {
+  margin-left: 2.2rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 2px solid black;
+  padding: 0.3rem;
+}
+
+::placeholder {
+  color: #000000;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+span {
+  display: inline-block;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.scores:nth-child(odd) {
+  background-color: #fff;
+}
+
+.scores:nth-child(even) {
+  background-color: #f0f0f0;
+} */
