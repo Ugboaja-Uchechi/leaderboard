@@ -3,18 +3,25 @@ import './styles.css';
 const playerContainer = document.querySelector('.score-list');
 const button = document.querySelector('.btn');
 
-const playerList = (e) => {
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
+
+async function getPlayers(e) {
   e.preventDefault();
-  const playerNames = document.querySelector('.name');
-  const playerScores = document.querySelector('.score');
+  const response = await fetch(baseUrl);
+  const data = await response.json();
+  const { user, score } = data;
+  document.querySelector('.name');
+  document.querySelector('.score');
   playerContainer.innerHTML = `
   <li class="scores">
-  <span>${playerNames.value}</span>
-  <span class="scores-span">${playerScores.value}</span>
+  <span>${user.value}</span>
+  <span class="scores-span">${score.value}</span>
   </li>
   `;
-};
-button.addEventListener('click', playerList);
+}
+button.addEventListener('click', getPlayers);
+// const postPlayers = await fetch(baseUrl);
+// const response =
 
 // const playerList = [
 //   {
