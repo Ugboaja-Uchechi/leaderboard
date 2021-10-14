@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Balsamiq Sans', sans-serif;
-  color: #FF0000;
+  color: #ff0000;
   /* background: linear-gradient(90deg, rgba(146,223,254,0.9332107843137255) 42%, rgba(252,161,161,0.9528186274509804) 64%); */
   background: linear-gradient(90deg, rgba(146,223,254,0.9332107843137255) 0%, rgba(124,149,250,1) 0%, rgba(146,223,254,0.9332107843137255) 42%, rgba(252,161,161,0.9528186274509804) 64%);
 }
@@ -84,7 +84,7 @@ input {
   border: 2px solid black;
   padding: 0.3rem;
   outline: none;
-  color: #FF3800;
+  color: #ff3800;
 }
 
 ::placeholder {
