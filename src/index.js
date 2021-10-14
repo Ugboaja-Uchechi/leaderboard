@@ -1,20 +1,25 @@
 import './styles.css';
 
-const playerContainer = document.querySelector('.score-list');
-const button = document.querySelector('.btn');
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ETFTbnMYzSTF8MDXXJqB/scores';
 
-const playerList = (e) => {
-  e.preventDefault();
-  const playerNames = document.querySelector('.name');
-  const playerScores = document.querySelector('.score');
-  playerContainer.innerHTML = `
-  <li class="scores">
-  <span>${playerNames.value}</span>
-  <span class="scores-span">${playerScores.value}</span>
-  </li>
-  `;
-};
-button.addEventListener('click', playerList);
+fetch(baseUrl)
+
+// fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ETFTbnMYzSTF8MDXXJqB/scores', {
+//   method: 'POST',
+//   body: JSON.stringify({
+// 	"user": "John Doe",
+// 	"score": 42
+//   }),
+//   headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+// }
+
+// const playerContainer = document.querySelector('.score-list');
+// // const button = document.querySelector('.btn');
 
 // const playerList = [
 //   {
