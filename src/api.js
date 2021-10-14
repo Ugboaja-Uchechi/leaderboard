@@ -1,5 +1,5 @@
 const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-const gameId = 'Zl4d7IVkemOTTVV';
+const gameId = 'NVAQATG5QcqVOQHrONmU';
 
 const createGame = async (gameName) => {
   const response = await fetch(apiURL, {

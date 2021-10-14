@@ -6,7 +6,8 @@
 
 # Screenshot
 
-![image](https://user-images.githubusercontent.com/74814780/136938704-30f68461-342b-44a4-a1a5-abadc4a6856d.png)
+![image](https://user-images.githubusercontent.com/74814780/137373744-4e73194f-c343-46ff-993f-7ac92ed88233.png)
+
 
 
 ## Setup
