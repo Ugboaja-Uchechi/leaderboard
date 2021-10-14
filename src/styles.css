@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Balsamiq Sans', sans-serif;
-  color: #FF3800;
+  color: #FF0000;
   /* background: linear-gradient(90deg, rgba(146,223,254,0.9332107843137255) 42%, rgba(252,161,161,0.9528186274509804) 64%); */
   background: linear-gradient(90deg, rgba(146,223,254,0.9332107843137255) 0%, rgba(124,149,250,1) 0%, rgba(146,223,254,0.9332107843137255) 42%, rgba(252,161,161,0.9528186274509804) 64%);
 }
@@ -11,14 +11,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40%;
+  width: 50%;
   border: 2px solid #000;
   transform: translate(-50%, -50%);
   background-image: url(/images/azula.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
   margin-left: 2rem;
+  color: black;
 }
 
 div > h3 button,
@@ -40,6 +43,7 @@ div > h3 button,
   position: relative;
   top: 1rem;
   font-size: 1.4rem;
+  color: black;
 }
 
 section {
@@ -80,7 +84,6 @@ input {
   border: 2px solid black;
   padding: 0.3rem;
   outline: none;
-  /* color: rgb(146,223,254); */
   color: #FF3800;
 }
 
@@ -105,9 +108,9 @@ span {
 }
 
 .scores:nth-child(odd) {
-  background-color: rgb(123 187 213 / 93%);
+  background-color: rgb(123 187 213);
 }
 
 .scores:nth-child(even) {
-  background-color: rgb(253 151 151 / 95%);
+  background-color: rgb(253 151 151);
 }
