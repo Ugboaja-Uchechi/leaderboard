@@ -1,51 +1,53 @@
 import './styles.css';
+import { createUser, fetchUser, createGame } from './api.js';
 
-const playerContainer = document.querySelector('.score-list');
-const button = document.querySelector('.btn');
+const list = document.querySelector('.score-list');
+const addScore = document.querySelector('.add-score');
+const refresh = document.getElementById('refresh');
+const username = document.querySelector('.name');
+const userscore = document.querySelector('.score');
 
-const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
+const sortUserDataByScore = (arr) => {
+  arr.sort((data1, data2) => data2.score - data1.score);
+};
 
-async function getPlayers(e) {
+const loadToDom = async () => {
+  const userData = await fetchUser();
+  sortUserDataByScore(userData.result);
+  let display = '';
+  userData.result.forEach((data, index) => {
+    display += `
+    <li class="scores">
+    <span class="fa-layers fa-fw">
+    <i class="fas fa-certificate"></i>
+    <span class="ranking fa-layers-text fa-inverse" data-fa-transform="shrink-11.5">${index + 1}</span>
+    </span>
+    <span class="user">${data.user.toUpperCase()}  </span>
+    <span class="class="scores-span"">${data.score}</span>
+    </li>
+    `;
+    list.innerHTML = display;
+    // list.appendChild(scoreInfo);
+  });
+};
+
+addScore.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const response = await fetch(baseUrl);
-  const data = await response.json();
-  const { user, score } = data;
-  document.querySelector('.name');
-  document.querySelector('.score');
-  playerContainer.innerHTML = `
-  <li class="scores">
-  <span>${user.value}</span>
-  <span class="scores-span">${score.value}</span>
-  </li>
-  `;
-}
-button.addEventListener('click', getPlayers);
-// const postPlayers = await fetch(baseUrl);
-// const response =
+  const userName = username.value;
+  const userScore = userscore.value;
 
-// const playerList = [
-//   {
-//     player: 'Azula',
-//     score: 300,
-//   },
-//   {
-//     player: 'Zuko',
-//     score: 200,
-//   },
-//   {
-//     player: 'Aang',
-//     score: 250,
-//   },
-//   {
-//     player: 'Sokka',
-//     score: 100,
-//   },
-// ];
+  if (userName !== '' && userScore !== '') {
+    await createUser(userName, userScore);
+  }
 
-// const showPlayers = (list) => `
-// <li class="scores">
-// <span>${list.player}</span>
-// <span class="scores-span">${list.score}</span>
-// </li>
-// `;
-// playerContainer.innerHTML = playerList.map((list) => showPlayers(list)).join('');
+  loadToDom();
+  username.value = '';
+  userscore.value = '';
+});
+
+refresh.addEventListener('click', loadToDom);
+
+document.addEventListener('DOMContentLoaded', () => {
+  createGame('Vic Game');
+  loadToDom();
+});

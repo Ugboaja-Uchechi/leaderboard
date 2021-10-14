@@ -4,17 +4,8 @@ body {
   font-family: 'Balsamiq Sans', sans-serif;
 }
 
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40%;
-  border: 2px solid #000;
-  transform: translate(-50%, -50%);
-}
-
 h1 {
-  margin-left: 2rem;
+  margin-left: 8rem;
 }
 
 div > h3 button,
@@ -28,8 +19,13 @@ div > h3 button,
   line-height: 1.5rem;
 }
 
+div > h3 button,
+.btn:hover {
+  cursor: pointer;
+}
+
 .text {
-  margin-left: 4.7rem;
+  margin-left: 18rem;
 }
 
 .text h3 {
@@ -45,18 +41,16 @@ section {
 }
 
 .score-list {
-  position: relative;
-  bottom: 1.5rem;
   border: 2px solid black;
   list-style-type: none;
-  width: 200%;
+  width: 300%;
   padding-left: 0;
   border-radius: 3px;
 }
 
 .add-score {
   position: relative;
-  bottom: 4.5rem;
+  bottom: 6rem;
   font-size: 1.4rem;
 }
 
