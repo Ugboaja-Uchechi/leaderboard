@@ -4,6 +4,10 @@
 
 * The leaderboard website displays scores.
 
+# Live Link
+
+[Demo Link](https://ugboaja-uchechi.github.io/leaderboard/dist/)
+
 # Screenshot
 
 ![image](https://user-images.githubusercontent.com/74814780/137373744-4e73194f-c343-46ff-993f-7ac92ed88233.png)
